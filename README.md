@@ -85,3 +85,13 @@ graph LR;
   A --> B;
 ``` 
 
+## Порядок добавления изменений
+
+```mermaid
+graph LR;
+  папка с измененным файлом -- "git add" --> staged;
+  staged    -- "коммит"     --> tracked/comitted;
+  comitted    -- "пуш"     --> PROFIT;
+
+``` 
+
